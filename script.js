@@ -49,6 +49,19 @@ mobileInput.addEventListener('input', function () {
     }
 });
 
+
+// Toggle the navigation menu on mobile
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links.main'); // Only main menu
+
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    }
+});
+
 // Handle form submit
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent default form submit
