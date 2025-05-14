@@ -908,7 +908,7 @@ h4 {
 /* Mobile Styles */
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block;
+    display: flex;
   }
 
   .nav-links {
