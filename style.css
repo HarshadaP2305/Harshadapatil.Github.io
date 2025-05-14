@@ -907,23 +907,24 @@ h4 {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
+  .menu-toggle {
+    display: block;
+  }
 
-    .nav-links {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        background-color: #5b5757;
-    }
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background-color: #5b5757;
+  }
 
-    .nav-links li {
-        text-align: center;
-        padding: 10px 0;
-    }
+  .nav-links.active {
+    display: flex;
+  }
 
-    .nav-links.active {
-        display: flex;
-    }
+  .nav-links li {
+    text-align: center;
+    padding: 10px 0;
+  }
 }
+

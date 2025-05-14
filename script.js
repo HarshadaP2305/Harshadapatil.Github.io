@@ -50,21 +50,14 @@ mobileInput.addEventListener('input', function () {
 });
 
 function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('active');
+  document
+    .querySelectorAll('.nav-links')
+    .forEach(nav => nav.classList.toggle('active'));
 }
 
-// Toggle the navigation menu on mobile
-document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links.main'); // Only main menu
 
-    if (menuToggle && navLinks) {
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    }
-});
+// Toggle the navigation menu on mobile
+
 
 // Handle form submit
 document.getElementById('contactForm').addEventListener('submit', function(event) {
